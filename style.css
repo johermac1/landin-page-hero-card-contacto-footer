@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #c8c1c1;
+  --btn-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+
+  /* Textos */
+  --text-gray: #c12626;
+  --text-white: #f3f4f6;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.header {
+  background: var(--secondary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0px 30px 0px 30px;
+
+  position: fixed;
+  top: 0;
+  z-index: 1; /* para que se vea siempre por encima */
+}
+
+.logo {
+  height: 80%;
+  border-radius: 50px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: contents;
+
+  gap: 150px;
+}
+.navbar i {
+  font-size: 36px;
+  display: none;
+}
+#toogle-menu {
+  display: none;
+}
+
+ul {
+  gap: 30px;
+}
+
+.navbar-link {
+  color: var(--text-gray);
+  font-size: 14px;
+}
+.navbar-link:hover {
+  background-color: green;
+}
+
+main {
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+#hero {
+  padding: 70px 0;
+  margin-top: 65px;
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 30px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.hero-info p {
+  font-size: 15px;
+  width: 70%;
+  color: var(--text-gray);
+}
+
+.hero-info p > span {
+  font-weight: 800;
+}
+
+.hero-info a {
+  color: var(--text-white);
+  background-color: var(--primary);
+  width: 120px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero-card {
+  width: 300px;
+  background-color: var(--secondary);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.hero-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.hero-card-top h3 {
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.hero-card-top span {
+  background-color: var(--primary);
+  text-align: center;
+  width: 50px;
+  padding: 3px 0px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.cards {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 5px;
+  padding: 30px;
+  border: 1px solid var(--primary);
+  border-radius: 15px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card h5 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.card p {
+  text-align: center;
+}
+
+.section-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: black;
+  padding: 50px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-contacto {
+  width: 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-contacto img {
+  width: 100%;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  color: rgb(246, 247, 248);
+  padding-right: 80px;
+}
+
+.nombre {
+  font-size: 20px;
+}
+
+.contact {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.redes {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.instagram,
+.linkdin,
+.telefono {
+  width: 120px;
+  display: flex;
+  gap: 10px;
+}
+
+.link-redes {
+  color: white;
+}
+
+.instagram img {
+  width: 15%;
+}
+
+.linkdin img {
+  width: 17%;
+  border-radius: 2px;
+}
+
+.telefono img {
+  width: 16%;
+  border-radius: 3px;
+}
+
+footer {
+  padding: 35px;
+  width: 100vw;
+  background-color: rgb(3, 2, 5);
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  border-top: 1px solid rgb(16, 16, 17);
+  font-style: oblique;
+}
+
+footer p {
+  background: linear-gradient(to right, #0896f5, rgb(206, 208, 235));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+label img {
+  width: 50px;
+  display: none;
+}
+
+/* MEDIA QUERYS mayor igual a 992px */
+
+@media (max-width: 992px) {
+  .hero-info {
+    text-align: center;
+    width: 90%;
+    align-items: center;
+  }
+  .hero-info h1 {
+    width: 100%;
+    display: block;
+  }
+  .hero-info p {
+    font-size: 16px;
+  }
+  .hero-info a {
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-card {
+    display: none;
+  }
+  nav {
+    background-color: #000000;
+  }
+
+  .underline-hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .underline-hover:hover {
+    text-decoration: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding-right: 40px;
+  }
+
+  .navbar img {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #toggle-menu:checked + .navbar-list {
+    display: flex;
+  }
+
+  .imagen-contacto img {
+    display: none;
+  }
+}
+
+/*Media Querys 576 px */
+
+@media (max-width: 576px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar ul {
+    background-color: var(--secondary);
+    width: 100%;
+    height: calc(100vh-65px);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200%);
+    transition: all 0.4s ease-out;
+  }
+  .navbar i {
+    display: block;
+  }
+  #toogle-menu:checked + .navbar-list {
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+  }
+}
